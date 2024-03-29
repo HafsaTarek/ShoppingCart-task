@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background:whitesmoke ;
+}
+
+/* Header-styles */
+header{
+    width:100%;
+    height:70px;
+}
+
+.header-content{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(217, 122, 177);
+    padding:20px
+}
+
+.title{
+font-size: 30px;
+font-weight: bold;
+text-decoration: none;
+margin-left: 30px;
+color:whitesmoke;
+}
+
+nav li a{
+display:block;
+min-width:80px;
+font-size: 20px;
+text-decoration:none ;
+font-weight: bold;
+color:whitesmoke;
+}
+
+nav ul{
+ display:flex;  
+ justify-content: space-between;
+ list-style: none; 
+}
+
+/* login-form-styles */
+
+.login-form{
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:45%;
+    position: absolute;
+    background-color:rgb(217, 122, 177);
+    padding:10px;
+    text-align: center;
+}
+
+
+.login-header{
+    font-size: 50px;
+    color:whitesmoke;
+}
+
+.login-form input{
+    display:block;
+    width:100%;
+    margin-top: 10px;
+    outline:none;
+    height:30px;
+    font-size: 20px;
+}
+
+
+
+.login-form form  input[type="submit"] {
+    font-size: 25px;
+    text-transform: uppercase;
+    height:35px;
+    cursor:pointer;
+}
+
+.login-form form  input[type="submit"]:hover {
+    opacity: .5;
+}
+
+
+nav  ul#userInfo {
+    display: none;
+}
+
+#user{
+    color:whitesmoke;
+}
+
+.cart{
+    margin-right:30px;
+    font-size: 30px;
+    color:whitesmoke;
+    position: relative;
+    width:30px;
+    cursor: pointer;
+}
+
+.badge{
+    font-size: 15px;
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    position: absolute;
+    top:-5px;
+    right:-10px;
+    background-color:rgb(165, 34, 102);
+    text-align: center;
+    display:none;    /* At first when no product added to the cart */
+}
+
+
+
+.cart-products{
+   position:absolute;
+   width:200px;
+   background-color:whitesmoke;
+   transform: translateX(-20%,0);
+   border: 1px solid rgb(165, 34, 102);
+   text-align: center;
+   padding:7px;
+   margin-top: 20px;
+   right:18px;
+   display:none;
+}
+
+
+.cart-products a{
+    color:rgb(165, 34, 102);
+   font-size: 15px;
+   background-color: rgb(222, 158, 193);
+}
+
+/* items-styles */
+
+.items{
+    width:45%;
+    margin-top: 20px;
+    margin-left:100px;
+   
+}
+
+
+
+.product-item{
+    height:30%;
+    width:100%;
+    display:flex;
+    border:1px solid rgb(227, 50, 150);
+    margin-bottom: 10px;
+}
+
+.product-img{
+    height:100%;
+    width:35%;
+}
+
+.product-desc h2{
+    margin-left:5px;
+    font-size: 20px;
+    margin-top: 2px;
+    color:rgb(227, 50, 150);
+    width:180px;
+}
+
+.product-desc p{
+    margin-left:5px;
+    font-size: 20px;
+    margin-top: 2px;
+    color:rgb(227, 50, 150);
+    width:180px;
+}
+
+.product-desc span{
+    margin-left:5px;
+    font-size: 20px;
+    margin-top: 2px;
+    color:rgb(227, 50, 150);
+    width:180px;
+    font-weight: bold;
+
+}
+
+
+.product-action{
+   flex:1;
+   text-align: right;
+   display:flex;
+   flex-direction: column;
+   justify-content:space-between ;
+}
+
+.addToCart{
+    display: block;
+    margin-left: auto;
+    background-color: rgb(216, 57, 137);
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fav {
+    display:block;
+    cursor: pointer;
+    width: 20px;
+    color:rgb(91, 4, 54);
+    margin-left: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
